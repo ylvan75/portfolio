@@ -1,0 +1,219 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+h1 {
+  font-size: 40px;
+  line-height: 49px;
+}
+
+h2 {
+  font-size: 24px;
+  line-height: 29px;
+}
+
+h3 {
+  font-size: 22px;
+  line-height: 27px;
+  background-color: #fa382f;
+  color: #ffffff;
+  padding: 8px;
+  margin-bottom: 40px;
+}
+
+h4 {
+  font-size: 22px;
+  line-height: 32px;
+  font-family: "Roboto";
+}
+
+h5 {
+  font-size: 20px;
+  line-height: 26px;
+}
+
+p {
+  font-size: 18px;
+  line-height: 29px;
+  font-family: "Roboto";
+}
+
+header {
+  background-image: url("./assets/top-section/water.jpg");
+  background-size: cover;
+  height: 80vh;
+  color: #fff;
+  position: relative;
+}
+
+/* Added padding to all sections to get good space on left, right, top and bottom */
+.summary,
+.tech,
+.featured-projects,
+.other-projects,
+.my-thoughts,
+.skills,
+.for-more,
+footer {
+  padding: 58px 36px;
+}
+
+/* Change the default styling for a-tag */
+.featured-projects a,
+.other-projects a,
+.my-thoughts a,
+.for-more a {
+  color: #000000;
+  text-decoration: none;
+}
+
+.header-text {
+  padding: 0px 36px;
+}
+
+.icons-wrapper {
+  display: flex;
+  justify-content: flex-end;
+  padding: 110px 36px 36px 36px;
+}
+
+.icons-wrapper img {
+  width: 15px;
+  height: 15px;
+}
+
+.profile-img {
+  width: 162px;
+  height: 162px;
+  border: 3px solid #fff;
+  border-radius: 50%;
+  position: absolute;
+  left: 176px;
+  bottom: -20px;
+}
+
+.summary {
+  background-color: #f4f4f4;
+}
+
+.red-line {
+  width: 35px;
+  height: 3px;
+  background-color: #fa382f;
+}
+
+.red-dot {
+  width: 10px;
+  height: 10px;
+  background-color: #fa382f;
+  border-radius: 50%;
+}
+
+.summary p,
+.tech p {
+  font-family: "Montserrat", sans-serif;
+  line-height: 29px;
+}
+
+.tech {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.tech-text {
+  text-align: center;
+}
+
+.featured-projects {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f4f4f4;
+}
+
+.featured-project-wrapper {
+  width: 100%;
+}
+
+.project-description span {
+  font-weight: bold;
+  color: #fa382f;
+}
+
+.method-wrapper span {
+  font-size: 9px;
+  line-height: 10px;
+  font-family: "Roboto";
+  color: #2b2e34;
+  background-color: #fddfe7;
+  padding: 5px 10px;
+}
+
+.other-projects {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f4f4f4;
+}
+
+.other-projects h3 {
+  color: #fa382f;
+  background-color: #f4f4f4;
+}
+
+.my-thoughts {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.my-thoughts-text span {
+  font-size: 18px;
+  line-height: 32px;
+  font-weight: bold;
+  font-family: "Roboto";
+  color: #fa382f;
+}
+
+.skills {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f4f4f4;
+}
+
+.skill-name {
+  font-weight: bold;
+  color: #fa382f;
+}
+
+.for-more {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.for-more p {
+  font-size: 12px;
+  line-height: 42px;
+  font-weight: 900;
+  font-family: Avenir;
+  color: #fa382f;
+}
+
+footer {
+  text-align: center;
+  background-color: #072bce;
+  color: #fff;
+}
+
+address {
+  padding-top: 20px;
+}
