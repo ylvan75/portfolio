@@ -52,8 +52,10 @@ header {
   position: relative;
 }
 
+/* REMOVE THIS BELOW */
+
 /* Added padding to all sections to get good space on left, right, top and bottom */
-.summary,
+/* .summary,
 .tech,
 .featured-projects,
 .other-projects,
@@ -62,7 +64,7 @@ header {
 .for-more,
 footer {
   padding: 58px 36px;
-}
+} */
 
 /* Change the default styling for a-tag */
 .featured-projects a,
@@ -102,6 +104,10 @@ footer {
   background-color: #f4f4f4;
 }
 
+.summary-container {
+  max-width: 303px;
+}
+
 .red-line {
   width: 35px;
   height: 3px;
@@ -121,26 +127,40 @@ footer {
   line-height: 29px;
 }
 
+/* REMOVE */
+/*
 .tech {
   display: flex;
   flex-direction: column;
   align-items: center;
+}*/
+
+.tech-container {
+  max-width: 303px;
 }
 
+/*
 .tech-text {
   text-align: center;
-}
+} */
 
 .featured-projects {
+  /* REMOVE
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: center; */
   background-color: #f4f4f4;
 }
 
+.featured-projects-container {
+  max-width: 303px;
+}
+
+/* REMOVE 100% and add max-width: 303
+/*
 .featured-project-wrapper {
   width: 100%;
-}
+} */
 
 .project-description span {
   font-weight: bold;
@@ -157,10 +177,15 @@ footer {
 }
 
 .other-projects {
+  /* REMOVE 
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: center;*/
   background-color: #f4f4f4;
+}
+
+.other-projects-container {
+  max-width: 303px;
 }
 
 .other-projects h3 {
@@ -168,10 +193,15 @@ footer {
   background-color: #f4f4f4;
 }
 
+/* REMOVE
 .my-thoughts {
   display: flex;
   flex-direction: column;
   align-items: center;
+} */
+
+.my-thoughts-container {
+  max-width: 303px;
 }
 
 .my-thoughts-text span {
@@ -183,10 +213,14 @@ footer {
 }
 
 .skills {
-  display: flex;
+  /*display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: center; */
   background-color: #f4f4f4;
+}
+
+.skills-container {
+  max-width: 303px;
 }
 
 .skill-name {
@@ -194,10 +228,15 @@ footer {
   color: #fa382f;
 }
 
+/* REMOVE
 .for-more {
   display: flex;
   flex-direction: column;
   align-items: center;
+} */
+
+.for-more-container {
+  max-width: 303px;
 }
 
 .for-more p {
@@ -216,4 +255,35 @@ footer {
 
 address {
   padding-top: 20px;
+}
+
+/*** MEDIA QUERIES ***/
+@media (min-width: 481px) {
+  .summary-container {
+    max-width: 1088px;
+  }
+
+  .tech-container {
+    max-width: 1088px;
+  }
+
+  .featured-projects-container {
+    max-width: 1088px;
+  }
+
+  .other-projects-container {
+    max-width: 1088px;
+  }
+
+  .my-thoughts-container {
+    max-width: 1088px;
+  }
+
+  .skills-container {
+    max-width: 1088px;
+  }
+
+  .for-more-container {
+    max-width: 1088px;
+  }
 }
