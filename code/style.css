@@ -100,6 +100,7 @@ header {
 
 .content {
   max-width: 303px;
+  width: 100%;
 }
 
 .heading {
@@ -165,10 +166,6 @@ header {
   background-color: #f4f4f4;
 }
 
-.other-project-width {
-  width: 100%;
-}
-
 .other-projects h3 {
   color: #fa382f;
   background-color: #f4f4f4;
@@ -195,11 +192,38 @@ header {
   color: #fa382f;
 }
 
+.for-more-wrapper {
+  display: flex;
+  justify-content: space-around;
+}
+
+.icon-wrapper {
+  color: #fa382f;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.for-more-wrapper i {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 3px solid #fa382f;
+  color: #fa382f;
+  border-radius: 50%;
+  height: 58px;
+  width: 59px;
+  font-size: 29px;
+  padding: 10px;
+  margin: 0;
+}
+
 .for-more p {
+  display: flex;
+  justify-content: center;
   font-size: 12px;
   line-height: 42px;
   font-weight: 900;
-  font-family: Avenir;
   color: #fa382f;
 }
 
@@ -227,6 +251,15 @@ address {
   .my-thoughts-wrapper {
     max-width: 300px;
   }
+  .for-more-wrapper i {
+    height: 80px;
+    width: 80px;
+    font-size: 38px;
+  }
+
+  .for-more p {
+    font-size: 16px;
+  }
 }
 
 @media (min-width: 1023px) {
@@ -242,6 +275,16 @@ address {
   .my-thoughts-wrapper {
     max-width: 400px;
   }
+
+  .for-more-wrapper i {
+    height: 120px;
+    width: 120px;
+    font-size: 48px;
+  }
+
+  .for-more p {
+    font-size: 18px;
+  }
 }
 
 @media (min-width: 1439px) {
@@ -256,5 +299,15 @@ address {
   .featured-project-wrapper,
   .my-thoughts-wrapper {
     max-width: 500px;
+  }
+
+  .for-more-wrapper i {
+    height: 160px;
+    width: 160px;
+    font-size: 58px;
+  }
+
+  .for-more p {
+    font-size: 25px;
   }
 }
