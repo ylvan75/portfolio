@@ -47,24 +47,11 @@ p {
 header {
   background-image: url("./assets/top-section/water.jpg");
   background-size: cover;
-  height: 80vh;
+  height: 60vh;
   color: #fff;
   position: relative;
+  width: 100%;
 }
-
-/* REMOVE THIS BELOW */
-
-/* Added padding to all sections to get good space on left, right, top and bottom */
-/* .summary,
-.tech,
-.featured-projects,
-.other-projects,
-.my-thoughts,
-.skills,
-.for-more,
-footer {
-  padding: 58px 36px;
-} */
 
 /* Change the default styling for a-tag */
 .featured-projects a,
@@ -104,8 +91,22 @@ footer {
   background-color: #f4f4f4;
 }
 
-.summary-container {
+.main-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 0px;
+}
+
+.content {
   max-width: 303px;
+}
+
+.heading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-basis: 100%;
 }
 
 .red-line {
@@ -127,40 +128,13 @@ footer {
   line-height: 29px;
 }
 
-/* REMOVE */
-/*
-.tech {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}*/
-
-.tech-container {
-  max-width: 303px;
-}
-
-/*
 .tech-text {
   text-align: center;
-} */
+}
 
 .featured-projects {
-  /* REMOVE
-  display: flex;
-  flex-direction: column;
-  align-items: center; */
   background-color: #f4f4f4;
 }
-
-.featured-projects-container {
-  max-width: 303px;
-}
-
-/* REMOVE 100% and add max-width: 303
-/*
-.featured-project-wrapper {
-  width: 100%;
-} */
 
 .project-description span {
   font-weight: bold;
@@ -177,31 +151,12 @@ footer {
 }
 
 .other-projects {
-  /* REMOVE 
-  display: flex;
-  flex-direction: column;
-  align-items: center;*/
   background-color: #f4f4f4;
-}
-
-.other-projects-container {
-  max-width: 303px;
 }
 
 .other-projects h3 {
   color: #fa382f;
   background-color: #f4f4f4;
-}
-
-/* REMOVE
-.my-thoughts {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-} */
-
-.my-thoughts-container {
-  max-width: 303px;
 }
 
 .my-thoughts-text span {
@@ -213,30 +168,12 @@ footer {
 }
 
 .skills {
-  /*display: flex;
-  flex-direction: column;
-  align-items: center; */
   background-color: #f4f4f4;
-}
-
-.skills-container {
-  max-width: 303px;
 }
 
 .skill-name {
   font-weight: bold;
   color: #fa382f;
-}
-
-/* REMOVE
-.for-more {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-} */
-
-.for-more-container {
-  max-width: 303px;
 }
 
 .for-more p {
@@ -258,32 +195,30 @@ address {
 }
 
 /*** MEDIA QUERIES ***/
-@media (min-width: 481px) {
-  .summary-container {
+@media (min-width: 767px) {
+  .main-wrapper {
+    padding: 80px 0px;
+  }
+
+  .content {
+    max-width: 700px;
+  }
+
+  .featured-project-wrapper {
+    max-width: 300px;
+  }
+}
+
+@media (min-width: 1439px) {
+  .main-wrapper {
+    padding: 120px 0px;
+  }
+
+  .content {
     max-width: 1088px;
   }
 
-  .tech-container {
-    max-width: 1088px;
-  }
-
-  .featured-projects-container {
-    max-width: 1088px;
-  }
-
-  .other-projects-container {
-    max-width: 1088px;
-  }
-
-  .my-thoughts-container {
-    max-width: 1088px;
-  }
-
-  .skills-container {
-    max-width: 1088px;
-  }
-
-  .for-more-container {
-    max-width: 1088px;
+  .featured-project-wrapper {
+    max-width: 500px;
   }
 }
