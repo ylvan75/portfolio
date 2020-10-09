@@ -11,6 +11,7 @@ body {
 h1 {
   font-size: 40px;
   line-height: 49px;
+  width: 50%;
 }
 
 h2 {
@@ -44,6 +45,12 @@ p {
   font-family: "Roboto";
 }
 
+.summary p,
+.tech p {
+  font-family: "Montserrat", sans-serif;
+  line-height: 29px;
+}
+
 header {
   background-image: url("./assets/top-section/water.jpg");
   background-size: cover;
@@ -66,7 +73,7 @@ header {
   margin-top: 60px;
 }
 
-.icons-wrapper {
+.social-icons-top {
   display: flex;
   justify-content: flex-end;
 }
@@ -80,7 +87,7 @@ header {
   margin-right: 5px;
 }
 
-.header-text {
+.header-content {
   margin-top: 30px;
 }
 
@@ -98,7 +105,7 @@ header {
   background-color: #f4f4f4;
 }
 
-.main-wrapper {
+.section-wrapper {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -128,12 +135,6 @@ header {
   height: 10px;
   background-color: #fa382f;
   border-radius: 50%;
-}
-
-.summary p,
-.tech p {
-  font-family: "Montserrat", sans-serif;
-  line-height: 29px;
 }
 
 .tech-text {
@@ -246,7 +247,7 @@ address {
 
 /*** MEDIA QUERIES ***/
 @media (min-width: 767px) {
-  .main-wrapper {
+  .section-wrapper {
     padding: 80px 0px;
   }
 
@@ -273,7 +274,7 @@ address {
   header {
     height: 655px;
   }
-  .main-wrapper {
+  .section-wrapper {
     padding: 100px 0px;
   }
 
@@ -298,7 +299,45 @@ address {
 }
 
 @media (min-width: 1439px) {
-  .main-wrapper {
+  h1 {
+    font-size: 82px;
+    line-height: 100px;
+  }
+
+  h2 {
+    font-size: 50px;
+    line-height: 62px;
+  }
+
+  h3 {
+    font-size: 48px;
+    line-height: 58px;
+    padding: 14px;
+    margin-bottom: 70px;
+  }
+
+  h4 {
+    font-size: 30px;
+    line-height: 42px;
+  }
+
+  h5 {
+    font-size: 38px;
+    line-height: 48px;
+  }
+
+  p {
+    font-size: 25px;
+    line-height: 41px;
+  }
+
+  .summary p,
+  .tech p {
+    font-size: 30px;
+    line-height: 50px;
+  }
+
+  .section-wrapper {
     padding: 120px 0px;
   }
 
