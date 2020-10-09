@@ -47,6 +47,7 @@ p {
 header {
   background-image: url("./assets/top-section/water.jpg");
   background-size: cover;
+  background-position: center;
   height: 508px;
   color: #fff;
 }
