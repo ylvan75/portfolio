@@ -51,21 +51,28 @@ p {
   line-height: 29px;
 }
 
+/* Change the default styling for a-tag's */
+.featured a,
+.other a,
+.my-thoughts a,
+.for-more a {
+  color: #000000;
+  text-decoration: none;
+}
+
+.summary,
+.featured,
+.other,
+.skills {
+  background-color: #f4f4f4;
+}
+
 header {
   background-image: url("./assets/top-section/water.jpg");
   background-size: cover;
   background-position: center;
   height: 508px;
   color: #fff;
-}
-
-/* Change the default styling for a-tag */
-.featured-projects a,
-.other-projects a,
-.my-thoughts a,
-.for-more a {
-  color: #000000;
-  text-decoration: none;
 }
 
 .header-wrapper {
@@ -91,6 +98,10 @@ header {
   margin-top: 30px;
 }
 
+.name {
+  font-weight: bold;
+}
+
 .profile-img {
   width: 162px;
   height: 162px;
@@ -99,10 +110,6 @@ header {
   position: absolute;
   right: 0px;
   bottom: -190px;
-}
-
-.summary {
-  background-color: #f4f4f4;
 }
 
 .section-wrapper {
@@ -124,13 +131,13 @@ header {
   flex-basis: 100%;
 }
 
-.red-line {
+.line {
   width: 35px;
   height: 3px;
   background-color: #fa382f;
 }
 
-.red-dot {
+.dot {
   width: 10px;
   height: 10px;
   background-color: #fa382f;
@@ -141,18 +148,15 @@ header {
   text-align: center;
 }
 
-.featured-projects {
-  background-color: #f4f4f4;
-}
-
-.featured-projects-container,
+.featured-container,
 .my-thoughts-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
 }
 
-.featured-project-wrapper img {
+.featured-wrapper img,
+.my-thoughts-wrapper img {
   width: 100%;
 }
 
@@ -162,25 +166,16 @@ header {
 }
 
 .method-wrapper span {
-  font-size: 9px;
-  line-height: 10px;
+  font-size: 16px;
   font-family: "Roboto";
   color: #2b2e34;
   background-color: #fddfe7;
   padding: 5px 10px;
 }
 
-.other-projects {
-  background-color: #f4f4f4;
-}
-
-.other-projects h3 {
+.other h3 {
   color: #fa382f;
   background-color: #f4f4f4;
-}
-
-.my-thoughts-wrapper img {
-  width: 100%;
 }
 
 .my-thoughts-text span {
@@ -191,16 +186,12 @@ header {
   color: #fa382f;
 }
 
-.skills {
-  background-color: #f4f4f4;
-}
-
 .skill-name {
   font-weight: bold;
   color: #fa382f;
 }
 
-.for-more-wrapper {
+.social-icons-bottom {
   display: flex;
   justify-content: space-around;
 }
@@ -212,7 +203,7 @@ header {
   align-items: center;
 }
 
-.for-more-wrapper i {
+.social-icons-bottom i {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -226,10 +217,10 @@ header {
   margin: 0;
 }
 
-.for-more p {
+.social-icons-bottom p {
   display: flex;
   justify-content: center;
-  font-size: 12px;
+  font-size: 16px;
   line-height: 42px;
   font-weight: 900;
   color: #fa382f;
@@ -255,22 +246,65 @@ address {
     max-width: 700px;
   }
 
-  .featured-project-wrapper,
+  .featured-wrapper,
   .my-thoughts-wrapper {
     max-width: 300px;
   }
-  .for-more-wrapper i {
+  .social-icons-bottom i {
     height: 80px;
     width: 80px;
     font-size: 38px;
   }
 
-  .for-more p {
+  .social-icons-bottom p {
     font-size: 16px;
   }
 }
 
 @media (min-width: 1023px) {
+  h1 {
+    font-size: 60px;
+    line-height: 80px;
+  }
+
+  h2 {
+    font-size: 36px;
+    line-height: 48px;
+  }
+
+  h3 {
+    font-size: 38px;
+    line-height: 50 px;
+    padding: 10px;
+    margin-bottom: 50px;
+  }
+
+  h4 {
+    font-size: 28px;
+    line-height: 36px;
+  }
+
+  h5 {
+    font-size: 26px;
+    line-height: 36px;
+  }
+
+  p {
+    font-size: 22px;
+    line-height: 32px;
+  }
+
+  .summary p,
+  .tech p {
+    font-size: 24px;
+    line-height: 36px;
+  }
+
+  .my-thoughts-text span {
+    font-size: 22px;
+    line-height: 36px;
+  }
+
   header {
     height: 655px;
   }
@@ -282,18 +316,18 @@ address {
     max-width: 900px;
   }
 
-  .featured-project-wrapper,
+  .featured-wrapper,
   .my-thoughts-wrapper {
     max-width: 400px;
   }
 
-  .for-more-wrapper i {
+  .social-icons-bottom i {
     height: 120px;
     width: 120px;
     font-size: 48px;
   }
 
-  .for-more p {
+  .social-icons-bottom p {
     font-size: 18px;
   }
 }
@@ -337,6 +371,31 @@ address {
     line-height: 50px;
   }
 
+  .my-thoughts-text span {
+    font-size: 25px;
+    line-height: 42px;
+  }
+
+  /* Xxxx */
+  .header-wrapper {
+    margin-top: 0px;
+  }
+
+  .fa {
+    font-size: 50px;
+    border: 3px solid #fff;
+    padding: 20px;
+    margin-right: 10px;
+  }
+
+  .profile-img {
+    width: 332px;
+    height: 332px;
+    border: 3px solid #fff;
+    bottom: -140px;
+  }
+
+  /* Xxxx */
   .section-wrapper {
     padding: 120px 0px;
   }
@@ -345,18 +404,18 @@ address {
     max-width: 1100px;
   }
 
-  .featured-project-wrapper,
+  .featured-wrapper,
   .my-thoughts-wrapper {
     max-width: 500px;
   }
 
-  .for-more-wrapper i {
+  .social-icons-bottom i {
     height: 160px;
     width: 160px;
     font-size: 58px;
   }
 
-  .for-more p {
+  .social-icons-bottom p {
     font-size: 25px;
   }
 }
