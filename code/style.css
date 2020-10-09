@@ -238,6 +238,22 @@ address {
 
 /*** MEDIA QUERIES ***/
 @media (min-width: 767px) {
+  .header-wrapper {
+    margin-top: 40px;
+  }
+
+  .fa {
+    font-size: 30px;
+    padding: 15px;
+    margin-right: 10px;
+  }
+
+  .profile-img {
+    width: 220px;
+    height: 220px;
+    bottom: -160px;
+  }
+
   .section-wrapper {
     padding: 80px 0px;
   }
@@ -308,6 +324,23 @@ address {
   header {
     height: 655px;
   }
+
+  .header-wrapper {
+    margin-top: 20px;
+  }
+
+  .fa {
+    font-size: 50px;
+    padding: 20px;
+    margin-right: 10px;
+  }
+
+  .profile-img {
+    width: 332px;
+    height: 332px;
+    bottom: -200px;
+  }
+
   .section-wrapper {
     padding: 100px 0px;
   }
@@ -376,26 +409,14 @@ address {
     line-height: 42px;
   }
 
-  /* Xxxx */
   .header-wrapper {
     margin-top: 0px;
   }
 
-  .fa {
-    font-size: 50px;
-    border: 3px solid #fff;
-    padding: 20px;
-    margin-right: 10px;
-  }
-
   .profile-img {
-    width: 332px;
-    height: 332px;
-    border: 3px solid #fff;
     bottom: -140px;
   }
 
-  /* Xxxx */
   .section-wrapper {
     padding: 120px 0px;
   }
