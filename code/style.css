@@ -47,7 +47,7 @@ p {
 header {
   background-image: url("./assets/top-section/water.jpg");
   background-size: cover;
-  height: 60vh;
+  height: 508px;
   color: #fff;
 }
 
@@ -62,6 +62,7 @@ header {
 
 .header-wrapper {
   position: relative;
+  margin-top: 60px;
 }
 
 .icons-wrapper {
@@ -78,6 +79,10 @@ header {
   margin-right: 5px;
 }
 
+.header-text {
+  margin-top: 30px;
+}
+
 .profile-img {
   width: 162px;
   height: 162px;
@@ -85,6 +90,7 @@ header {
   border-radius: 50%;
   position: absolute;
   right: 0px;
+  bottom: -190px;
 }
 
 .summary {
@@ -263,6 +269,9 @@ address {
 }
 
 @media (min-width: 1023px) {
+  header {
+    height: 655px;
+  }
   .main-wrapper {
     padding: 100px 0px;
   }
