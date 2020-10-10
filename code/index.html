@@ -218,7 +218,9 @@
       <section class="section-wrapper my-thoughts">
         <div class="content my-thoughts-container">
           <div class="heading">
-            <h3>MY THOUGHTS</h3>
+            <h3 tabindex="0" aria-label="My thoughts about code">
+              MY THOUGHTS
+            </h3>
           </div>
           <article class="my-thoughts-wrapper">
             <a href="">
@@ -226,19 +228,22 @@
                 <img
                   src="./assets/my-thoughts/671efedfde84106f4952e1242aba9bc3.png"
                   alt="my thoughts image"
+                  aria-label="How to stop being scared: Learning to love code"
                 />
               </div>
               <div class="my-thoughts-text">
-                <span>DEC 2019 </span>
-                <h4>How to stop being scared: Learning to love code</h4>
-                <p>
+                <span aria-hidden="true">DEC 2019 </span>
+                <h4 aria-hidden="true">
+                  How to stop being scared: Learning to love code
+                </h4>
+                <p aria-hidden="true">
                   Writing code is less about “just working”. Instead, it’s much
                   more about creativity. It’s similar to creative writing in
                   that the author architecting a story must use an assortment of
                   tools and components (i.e., content) in such a way to satisfy
                   a particular objective.
                 </p>
-                <span class="arrow"> >></span>
+                <span class="arrow" aria-hidden="true"> >></span>
               </div>
             </a>
           </article>
@@ -248,19 +253,22 @@
                 <img
                   src="./assets/my-thoughts/671efedfde84106f4952e1242aba9bc3.png"
                   alt="my thoughts image"
+                  aria-label="How to stop being scared: Learning to love code"
                 />
               </div>
               <div class="my-thoughts-text">
-                <span>DEC 2019 </span>
-                <h4>How to stop being scared: Learning to love code</h4>
-                <p>
+                <span aria-hidden="true">DEC 2019 </span>
+                <h4 aria-hidden="true">
+                  How to stop being scared: Learning to love code
+                </h4>
+                <p aria-hidden="true">
                   Writing code is less about “just working”. Instead, it’s much
                   more about creativity. It’s similar to creative writing in
                   that the author architecting a story must use an assortment of
                   tools and components (i.e., content) in such a way to satisfy
                   a particular objective.
                 </p>
-                <span class="arrow"> >></span>
+                <span class="arrow" aria-hidden="true"> >></span>
               </div>
             </a>
           </article>
@@ -270,25 +278,49 @@
       <section class="section-wrapper skills">
         <div class="content">
           <div class="heading">
-            <h3>SKILLS</h3>
+            <h3 tabindex="0">SKILLS</h3>
           </div>
           <div class="skill">
-            <p class="skill-name">CODE</p>
+            <p
+              class="skill-name"
+              tabindex="0"
+              aria-label="Code skills HTML5, CSS and Javascript"
+            >
+              CODE
+            </p>
             <p>HTML5</p>
             <p>CSS</p>
             <p>Javascript</p>
           </div>
           <div class="skill">
-            <p class="skill-name">TOOLBOX</p>
+            <p
+              class="skill-name"
+              tabindex="0"
+              aria-label="Toolbox skills VS Code and Slack"
+            >
+              TOOLBOX
+            </p>
             <p>VS Code</p>
             <p>Slack</p>
           </div>
           <div class="skill">
-            <p class="skill-name">UPCOMING</p>
+            <p
+              class="skill-name"
+              tabindex="0"
+              aria-label="Upcoming skill Redux"
+            >
+              UPCOMING
+            </p>
             <p>Redux</p>
           </div>
           <div class="skill">
-            <p class="skill-name">MORE</p>
+            <p
+              class="skill-name"
+              tabindex="0"
+              aria-label="More skills Agile methodology and Cypress"
+            >
+              MORE
+            </p>
             <p>Agile methodology</p>
             <p>Cypress</p>
           </div>
@@ -298,7 +330,7 @@
       <section class="section-wrapper for-more">
         <div class="content">
           <div class="heading">
-            <h3>FOR MORE</h3>
+            <h3 tabindex="0">FOR MORE</h3>
           </div>
           <div class="social-icons-bottom">
             <a
@@ -307,12 +339,12 @@
             >
               <i class="fa fa-linkedin"></i>
               <span class="sr-only">LinkedIn</span>
-              <p>LINKEDIN</p>
+              <p aria-hidden="true">LINKEDIN</p>
             </a>
             <a href="https://github.com/ylvan75" class="icon-wrapper">
               <i class="fa fa-github"></i>
               <span class="sr-only">GitHub</span>
-              <p>GITHUB</p>
+              <p aria-hidden="true">GITHUB</p>
             </a>
             <a
               href="https://stackoverflow.com/users/14074978/ylva-nilsson"
@@ -320,7 +352,7 @@
             >
               <i class="fa fa-stack-overflow"></i>
               <span class="sr-only">StackOverflow</span>
-              <p>STACKOVERFLOW</p>
+              <p aria-hidden="true">STACKOVERFLOW</p>
             </a>
           </div>
         </div>
@@ -328,11 +360,18 @@
     </main>
 
     <footer>
-      <h5>CONTACT</h5>
+      <h5 tabindex="0">CONTACT</h5>
       <address>
-        <p>Ylva Nilsson</p>
-        <p>+46 70 347 47 99</p>
-        <p>ylva.nilsson75@gmail.com</p>
+        <p tabindex="0">Ylva Nilsson</p>
+        <p
+          tabindex="0"
+          aria-label="Phone number plus four sex seven zero three four seven four seven nine nine"
+        >
+          +46 70 347 47 99
+        </p>
+        <p tabindex="0" aria-label="Ylva dot Nilsson 75 @ gmail dot com">
+          ylva.nilsson75@gmail.com
+        </p>
       </address>
     </footer>
   </body>

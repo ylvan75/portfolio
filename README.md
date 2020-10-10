@@ -1,4 +1,4 @@
-# My portfolio [View Live!]()
+# My portfolio [View Live!](https://ylva-nilsson-portfolio.netlify.app/)
 This week's project has been to build my own portfolio to show the world the wonders that I'm now capable of building. The portfolio shall contain feature projects that I have built so far and some information about myself and my background and my contact details.
 
 In addition to creating HTML and CSS, the mission has also been to test our website
@@ -38,7 +38,8 @@ This is what I have used for testing and tried to fix things that have been high
 **General**
 
 * Use `text-transform: uppercase;` instead of writing my text in capital letters in HTML
-* Update the site with my information about myself and my background and so on. 
+* Update the site with my information about myself and my background and so on.
+* Update ARIA if changing the content 
 
 **Header**
 
@@ -76,17 +77,17 @@ This is what I have used for testing and tried to fix things that have been high
 
 **For more**
 
-* Xxxx
-* Xxxx
+* None
 
 **Footer**
 
-* Xxxx
-* Xxxx
+* Give some love with styling
+* Add this `<a href="mailto:ylva.nilsson75@gmail.com">ylva.nilsson75@gmail.com</a>`
+* iOS - Phone number need to add some specific stylining for iOS since it becomes a clickable link in blue color. So you barely see it.  
 
 
 ## View it live
 
-Try it out [here]()
+Try it out [here](https://ylva-nilsson-portfolio.netlify.app/)
 
 
