@@ -131,17 +131,30 @@ header {
   flex-basis: 100%;
 }
 
+.summary p {
+  text-indent: 50px;
+  position: relative;
+}
+
 .line {
-  width: 35px;
-  height: 3px;
-  background-color: #fa382f;
+  background: #fa382f;
+  width: 30px;
+  height: 2px;
+  display: inline-block;
+  position: absolute;
+  top: 13px;
+  left: 0px;
 }
 
 .dot {
+  background: #fa382f;
   width: 10px;
   height: 10px;
-  background-color: #fa382f;
   border-radius: 50%;
+  display: inline-block;
+  position: absolute;
+  top: 9px;
+  left: 30px;
 }
 
 .tech-text {
@@ -350,6 +363,23 @@ address {
     max-width: 900px;
   }
 
+  .summary p {
+    text-indent: 60px;
+    position: relative;
+  }
+
+  .line {
+    width: 40px;
+    height: 4px;
+    top: 14px;
+  }
+
+  .dot {
+    width: 15px;
+    height: 15px;
+    left: 40px;
+  }
+
   .featured-wrapper,
   .my-thoughts-wrapper {
     max-width: 400px;
@@ -425,6 +455,14 @@ address {
 
   .content {
     max-width: 1100px;
+  }
+
+  .line {
+    top: 21px;
+  }
+
+  .dot {
+    top: 16px;
   }
 
   .featured-wrapper,
