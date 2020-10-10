@@ -8,11 +8,30 @@ In addition to creating HTML and CSS, the mission has also been to test our webs
 
 ## The process and structure
 
-I decided to have have three media queries which I think made it hard to decide on width for the content and also which font-sizes and line-height to use.
+I decided to have three media queries which made it hard to decide on width for content and also which font-sizes and line-height to use.
 
-For me this was a really heavy project to come up with a good HTML and CSS structure and start with mobile first and later on be able to scale your web-site to tablet and desktop and have it to be responsive.
+For me this was a really heavy project to first come up with a good HTML and CSS structure to be able later on to create a responsive website. On this also keep up with the testing in a good way. I fell into the trap and got started too late. Felt tough when my profession is within quality assurance. I'm used with Cross-browser testing but accessibilty testing is a new area for me and especillay the screen reader part. Feels good to add that knowledge to my QA profession.
+
+It's so hard to come up with good class names to create a clean CSS file. Mine has become to meassy.
 
 So I have made a TO-DO list with general and section specific things to come back to later on in this Boot Camp to hopefully make it more final and get higher scores on accessibility.
+
+This is what I have used for testing and tried to fix things that have been highlighted (doesn't mean that I still can have issues on my website)
+
+**Accessibility**
+
+* Screen reader - Chromevox
+* Lighthouse
+* [https://wave.webaim.org/](https://validator.w3.org/)
+* [https://validator.w3.org/](https://validator.w3.org/)
+
+**Cross-browser**
+
+* Chrome - Mac
+* Firefox - Windows
+* Edge - Windows
+* iOS - iPone X (Safari)
+* Android - Samsung S8 (Chrome)
 
 ### TO-DO list
 
@@ -35,23 +54,25 @@ So I have made a TO-DO list with general and section specific things to come bac
 
 **Featured projects**
 
-* Xxxx
-* Xxxx
+* Add overlay on the images
+* Better CSS styling to have space between elements
 
 **Other projects**
 
-* Xxxx
-* Xxxx
+* Better CSS styling to have space between elements
 
 **My thoughts**
 
-* Xxxx
-* Xxxx
+* Better CSS styling to have space between elements
+* For mobile just show one "My thoughts" the other one shall added to "More thoughts" (toggle on/off)
+
+**More thoughts**
+
+* Add to the website
 
 **Skills**
 
-* Xxxx
-* Xxxx
+* Needs to be styled (just added content)
 
 **For more**
 
@@ -62,8 +83,6 @@ So I have made a TO-DO list with general and section specific things to come bac
 
 * Xxxx
 * Xxxx
-
-## Screenshot
 
 
 ## View it live

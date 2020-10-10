@@ -67,6 +67,7 @@ p {
   background-color: #f4f4f4;
 }
 
+/* HEADER */
 header {
   background-image: url("./assets/top-section/water.jpg");
   background-size: cover;
@@ -112,6 +113,9 @@ header {
   bottom: -190px;
 }
 
+/* SUMMARY*/
+
+/* common used class name */
 .section-wrapper {
   display: flex;
   flex-direction: column;
@@ -119,11 +123,13 @@ header {
   padding: 40px 0px;
 }
 
+/* common used class name */
 .content {
   max-width: 303px;
   width: 100%;
 }
 
+/* common used class name */
 .heading {
   display: flex;
   flex-direction: column;
@@ -157,10 +163,12 @@ header {
   left: 30px;
 }
 
+/* TECH */
 .tech-text {
   text-align: center;
 }
 
+/* FEATURED PROJECTS, OTHER PROJECTS AND MY THOUGHTS*/
 .featured-container,
 .my-thoughts-container {
   display: flex;
@@ -173,7 +181,22 @@ header {
   width: 100%;
 }
 
+.featured-wrapper,
+.my-thoughts-wrapper {
+  margin-top: 20px;
+}
+
+.project-description {
+  margin: 20px 0px;
+}
+
 .project-description span {
+  font-weight: bold;
+  color: #fa382f;
+}
+
+.arrow {
+  text-decoration: underline;
   font-weight: bold;
   color: #fa382f;
 }
@@ -199,11 +222,13 @@ header {
   color: #fa382f;
 }
 
+/* SKILLS */
 .skill-name {
   font-weight: bold;
   color: #fa382f;
 }
 
+/* FOR MORE */
 .social-icons-bottom {
   display: flex;
   justify-content: space-around;
@@ -239,6 +264,7 @@ header {
   color: #fa382f;
 }
 
+/* FOOTER */
 footer {
   text-align: center;
   background-color: #072bce;
