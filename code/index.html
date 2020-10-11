@@ -3,6 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Ylva Nilsson's portfolio" />
+    <meta
+      name="keywords"
+      content="Portfolio, Frontend, Developer, Programming, Design"
+    />
     <meta name="author" content="Ylva Nilsson" />
     <link
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
@@ -12,221 +17,361 @@
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <link rel="stylesheet" href="./style.css" />
-    <title>Ylva's frontend portfolio</title>
+    <title>Ylva Nilsson's portfolio for frontend developer</title>
   </head>
   <body>
     <header>
-      <section class="icons-wrapper">
-        <a href="https://www.linkedin.com/in/ylvanilsson/">
-          <div>
-            <img
-              src="./assets/iconmonstr-linkedin-1/iconmonstr-linkedin-1.png"
-              alt="linkedin symbol"
-            />
-          </div>
-        </a>
-        <a href="https://github.com/ylvan75">
-          <div>
-            <img src="./assets/github/github.png" alt="github symbol" />
-          </div>
-        </a>
+      <section class="section-wrapper">
+        <div class="content header-wrapper">
+          <section class="social-icons-top">
+            <a href="https://www.linkedin.com/in/ylvanilsson/">
+              <i class="fa fa-linkedin"></i>
+              <span class="sr-only">LinkedIn</span>
+            </a>
+            <a href="https://github.com/ylvan75">
+              <i class="fa fa-github"></i>
+              <span class="sr-only">GitHub</span>
+            </a>
+            <a href="https://stackoverflow.com/users/14074978/ylva-nilsson">
+              <i class="fa fa-stack-overflow"></i>
+              <span class="sr-only">StackOverflow</span>
+            </a>
+          </section>
+
+          <section class="header-content">
+            <p tabindex="0">
+              PORTFOLIO: <span class="name">YLVA NILSSON</span>
+            </p>
+            <h1 tabindex="0">frontend developer</h1>
+            <h2 tabindex="0">+ QA expertise</h2>
+          </section>
+          <img
+            tabindex="0"
+            class="profile-img"
+            src="./assets/profile/YlvaNilssonProfil.jpg"
+            alt="Profile picture of Ylva Nilsson"
+          />
+        </div>
       </section>
-      <section class="header-text">
-        <p>PORTFOLIO: YLVA NILSSON</p>
-        <h1>frontend developer</h1>
-        <h2>+ quality assurance expertise</h2>
-      </section>
-      <img
-        class="profile-img"
-        src="./assets/profile/YlvaNilssonProfil.jpg"
-        alt="profile picture by Ylva"
-      />
     </header>
 
     <main>
-      <section class="summary">
-        <p>
-          <span class="red-line">hej</span><span class="red-dot">då</span>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quibusdam,
-          dolores. Dolore reprehenderit eveniet, assumenda itaque est
-          praesentium in dolores molestias pariatur voluptate culpa ratione qui
-          ea nulla esse, laboriosam quam?
-        </p>
+      <section class="section-wrapper summary">
+        <div class="content">
+          <p tabindex="0">
+            <span class="line"></span><span class="dot"></span>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quibusdam,
+            dolores. Dolore reprehenderit eveniet, assumenda itaque est
+            praesentium in dolores molestias pariatur voluptate culpa ratione
+            qui ea nulla esse, laboriosam quam?
+          </p>
+        </div>
       </section>
-      <section class="tech">
-        <h3>TECH</h3>
-        <p class="tech-text">
-          HTML, CSS, Flexbox, JavaScript, ES6, JSX, React, React Hooks, Redux,
-          Node.js, Mongo DB, Web Accessibly, API:s, mob-programming,
-          pair-programming, Github.
-        </p>
+
+      <section class="section-wrapper tech">
+        <div class="content">
+          <div class="heading">
+            <h3 tabindex="0">TECH</h3>
+          </div>
+          <p tabindex="0" class="tech-text">
+            HTML, CSS, Flexbox, JavaScript, ES6, JSX, React, React Hooks, Redux,
+            Node.js, Mongo DB, Web Accessibly, API:s, mob-programming,
+            pair-programming, Github.
+          </p>
+        </div>
       </section>
-      <section class="featured-projects">
-        <h3>FEATURED PROJECTS</h3>
-        <a
-          class="featured-project-wrapper"
-          href="https://github.com/ylvan75/project-weather-app"
-        >
-          <div class="overlay">
-            <img
-              src="./assets/featured-projects/weather-app.png"
-              alt="weather app image"
-            />
-            <p>WEATHER APP</p>
+
+      <section class="section-wrapper featured">
+        <div class="content featured-container">
+          <div class="heading">
+            <h3 tabindex="0" aria-label="Projects I have created">
+              FEATURED PROJECTS
+            </h3>
           </div>
-          <div class="project-description">
-            <p>
-              <span>WEATHER APP. </span>Web app build in Javascript using open
-              weather API<span> >></span>
-            </p>
-          </div>
-          <div class="method-wrapper">
-            <span>HTML5</span>
-            <span>CSS</span>
-            <span>JavaScript</span>
-            <span>API</span>
-          </div>
-        </a>
-        <a
-          class="featured-project-wrapper"
-          href="https://github.com/ylvan75/project-cluedo"
-        >
-          <div class="overlay">
-            <img
-              src="./assets/featured-projects/cluedo.png"
-              alt="cluedo app image"
-            />
-            <p>CLUEDO</p>
-          </div>
-          <div class="project-description">
-            <p>
-              <span>CLUEDO. </span>Web app build in Javascript using array and
-              objects<span> >></span>
-            </p>
-          </div>
-          <div class="method-wrapper">
-            <span>HTML5</span>
-            <span>CSS</span>
-            <span>JavaScript</span>
-          </div>
-        </a>
+          <article class="featured-wrapper">
+            <a
+              href="https://github.com/ylvan75/project-weather-app"
+              aria-label="Link to Weather App on Git Hub. Web app build in Javascript using
+            open weather API"
+            >
+              <div>
+                <img
+                  src="./assets/featured-projects/weather-app.png"
+                  alt="weather app image"
+                />
+              </div>
+              <div class="project-description">
+                <p>
+                  <span>WEATHER APP. </span>Web app build in Javascript using
+                  open weather API<span class="arrow" aria-hidden="true">
+                    >></span
+                  >
+                </p>
+              </div>
+            </a>
+            <div
+              class="method-wrapper"
+              tabindex="0"
+              aria-label="Tech used in the project"
+            >
+              <span tabindex="0">HTML5</span>
+              <span tabindex="0">CSS</span>
+              <span tabindex="0">JavaScript</span>
+              <span tabindex="0">API</span>
+            </div>
+          </article>
+          <article class="featured-wrapper">
+            <a
+              href="https://github.com/ylvan75/project-cluedo"
+              aria-label="Link to Cluedo game on Git Hub. Web app build in Javscript using array and objects"
+            >
+              <div>
+                <img
+                  src="./assets/featured-projects/cluedo.png"
+                  alt="cluedo app image"
+                />
+              </div>
+              <div class="project-description">
+                <p>
+                  <span>CLUEDO. </span>Web app build in Javascript using array
+                  and objects<span class="arrow" aria-hidden="true"> >></span>
+                </p>
+              </div>
+            </a>
+            <div
+              class="method-wrapper"
+              tabindex="0"
+              aria-label="Tech used in the project"
+            >
+              <span tabindex="0">HTML5</span>
+              <span tabindex="0">CSS</span>
+              <span tabindex="0">JavaScript</span>
+            </div>
+          </article>
+        </div>
       </section>
-      <section class="other-projects">
-        <h3>OTHER PROJECTS</h3>
-        <a href="https://github.com/ylvan75/project-pizza-bot">
-          <div class="project-description">
-            <p>
-              <span>PIZZA BOT. </span>Web app build in Javascript work as a
-              bot<span> >></span>
-            </p>
+
+      <section class="section-wrapper other">
+        <div class="content">
+          <div class="heading">
+            <h3 tabindex="0">OTHER PROJECTS</h3>
           </div>
-          <div class="method-wrapper">
-            <span>HTML5</span>
-            <span>CSS</span>
-            <span>JavaScript</span>
-          </div>
-        </a>
-        <a href="https://github.com/ylvan75/project-business-site">
-          <div class="project-description">
-            <p>
-              <span>BUSINESS SITE. </span>Web app build in HTML and CSS with a
-              business site structure<span> >></span>
-            </p>
-          </div>
-          <div class="method-wrapper">
-            <span>HTML5</span>
-            <span>CSS</span>
-          </div>
-        </a>
-        <a href="https://github.com/ylvan75/project-news-site">
-          <div class="project-description">
-            <p>
-              <span>NEWS SITE. </span>Web app build in HTML and CSS with a news
-              site structure<span> >></span>
-            </p>
-          </div>
-          <div class="method-wrapper">
-            <span>HTML5</span>
-            <span>CSS</span>
-          </div>
-        </a>
+
+          <article class="other-wrapper">
+            <a href="https://github.com/ylvan75/project-pizza-bot">
+              <div class="project-description">
+                <p>
+                  <span>PIZZA BOT. </span>Web app build in Javascript work as a
+                  bot<span class="arrow" aria-hidden="true"> >></span>
+                </p>
+              </div>
+            </a>
+            <div class="method-wrapper">
+              <span>HTML5</span>
+              <span>CSS</span>
+              <span>JavaScript</span>
+            </div>
+          </article>
+          <article class="other-wrapper">
+            <a href="https://github.com/ylvan75/project-business-site">
+              <div class="project-description">
+                <p>
+                  <span>BUSINESS SITE. </span>Web app build in HTML and CSS with
+                  a business site structure<span
+                    class="arrow"
+                    aria-hidden="true"
+                  >
+                    >></span
+                  >
+                </p>
+              </div>
+            </a>
+            <div class="method-wrapper">
+              <span>HTML5</span>
+              <span>CSS</span>
+            </div>
+          </article>
+          <article class="other-wrapper">
+            <a href="https://github.com/ylvan75/project-news-site">
+              <div class="project-description">
+                <p>
+                  <span>NEWS SITE. </span>Web app build in HTML and CSS with a
+                  news site structure<span class="arrow" aria-hidden="true">
+                    >></span
+                  >
+                </p>
+              </div>
+            </a>
+            <div class="method-wrapper">
+              <span>HTML5</span>
+              <span>CSS</span>
+            </div>
+          </article>
+        </div>
       </section>
-      <section class="my-thoughts">
-        <h3>MY THOUGHTS</h3>
-        <a href="">
-          <div>
-            <img
-              src="./assets/my-thoughts/671efedfde84106f4952e1242aba9bc3.png"
-              alt="my thoughts image"
-            />
+
+      <section class="section-wrapper my-thoughts">
+        <div class="content my-thoughts-container">
+          <div class="heading">
+            <h3 tabindex="0" aria-label="My thoughts about code">
+              MY THOUGHTS
+            </h3>
           </div>
-          <div class="my-thoughts-text">
-            <span>DEC 2019 </span>
-            <h4>How to stop being scared: Learning to love code</h4>
-            <p>
-              Writing code is less about “just working”. Instead, it’s much more
-              about creativity. It’s similar to creative writing in that the
-              author architecting a story must use an assortment of tools and
-              components (i.e., content) in such a way to satisfy a particular
-              objective.
-            </p>
-            <span> >></span>
-          </div>
-        </a>
+          <article class="my-thoughts-wrapper">
+            <a href="">
+              <div>
+                <img
+                  src="./assets/my-thoughts/671efedfde84106f4952e1242aba9bc3.png"
+                  alt="my thoughts image"
+                  aria-label="How to stop being scared: Learning to love code"
+                />
+              </div>
+              <div class="my-thoughts-text">
+                <span aria-hidden="true">DEC 2019 </span>
+                <h4 aria-hidden="true">
+                  How to stop being scared: Learning to love code
+                </h4>
+                <p aria-hidden="true">
+                  Writing code is less about “just working”. Instead, it’s much
+                  more about creativity. It’s similar to creative writing in
+                  that the author architecting a story must use an assortment of
+                  tools and components (i.e., content) in such a way to satisfy
+                  a particular objective.
+                </p>
+                <span class="arrow" aria-hidden="true"> >></span>
+              </div>
+            </a>
+          </article>
+          <article class="my-thoughts-wrapper">
+            <a href="">
+              <div>
+                <img
+                  src="./assets/my-thoughts/671efedfde84106f4952e1242aba9bc3.png"
+                  alt="my thoughts image"
+                  aria-label="How to stop being scared: Learning to love code"
+                />
+              </div>
+              <div class="my-thoughts-text">
+                <span aria-hidden="true">DEC 2019 </span>
+                <h4 aria-hidden="true">
+                  How to stop being scared: Learning to love code
+                </h4>
+                <p aria-hidden="true">
+                  Writing code is less about “just working”. Instead, it’s much
+                  more about creativity. It’s similar to creative writing in
+                  that the author architecting a story must use an assortment of
+                  tools and components (i.e., content) in such a way to satisfy
+                  a particular objective.
+                </p>
+                <span class="arrow" aria-hidden="true"> >></span>
+              </div>
+            </a>
+          </article>
+        </div>
       </section>
-      <section class="skills">
-        <h3>SKILLS</h3>
-        <div class="skills-wrapper">
+
+      <section class="section-wrapper skills">
+        <div class="content">
+          <div class="heading">
+            <h3 tabindex="0">SKILLS</h3>
+          </div>
           <div class="skill">
-            <p class="skill-name">CODE</p>
+            <p
+              class="skill-name"
+              tabindex="0"
+              aria-label="Code skills HTML5, CSS and Javascript"
+            >
+              CODE
+            </p>
             <p>HTML5</p>
             <p>CSS</p>
             <p>Javascript</p>
           </div>
           <div class="skill">
-            <p class="skill-name">TOOLBOX</p>
+            <p
+              class="skill-name"
+              tabindex="0"
+              aria-label="Toolbox skills VS Code and Slack"
+            >
+              TOOLBOX
+            </p>
             <p>VS Code</p>
             <p>Slack</p>
           </div>
           <div class="skill">
-            <p class="skill-name">UPCOMING</p>
+            <p
+              class="skill-name"
+              tabindex="0"
+              aria-label="Upcoming skill Redux"
+            >
+              UPCOMING
+            </p>
             <p>Redux</p>
           </div>
           <div class="skill">
-            <p class="skill-name">MORE</p>
+            <p
+              class="skill-name"
+              tabindex="0"
+              aria-label="More skills Agile methodology and Cypress"
+            >
+              MORE
+            </p>
             <p>Agile methodology</p>
             <p>Cypress</p>
           </div>
         </div>
       </section>
-      <section class="for-more">
-        <h3>FOR MORE</h3>
-        <div class="icons-wrapper-bottom">
-          <a href="https://www.linkedin.com/in/ylvanilsson/">
-            <div>
-              <img
-                src="./assets/iconmonstr-linkedin-1-red/iconmonstr-linkedin-1.png"
-                alt="linkedin symbol"
-              />
-              <p>LINKED IN</p>
-            </div>
-          </a>
-          <a href="https://github.com/ylvan75">
-            <div>
-              <img src="./assets/github-red/github.png" alt="github symbol" />
-              <p>GITHUB</p>
-            </div>
-          </a>
+
+      <section class="section-wrapper for-more">
+        <div class="content">
+          <div class="heading">
+            <h3 tabindex="0">FOR MORE</h3>
+          </div>
+          <div class="social-icons-bottom">
+            <a
+              href="https://www.linkedin.com/in/ylvanilsson/"
+              class="icon-wrapper"
+            >
+              <i class="fa fa-linkedin"></i>
+              <span class="sr-only">LinkedIn</span>
+              <p aria-hidden="true">LINKEDIN</p>
+            </a>
+            <a href="https://github.com/ylvan75" class="icon-wrapper">
+              <i class="fa fa-github"></i>
+              <span class="sr-only">GitHub</span>
+              <p aria-hidden="true">GITHUB</p>
+            </a>
+            <a
+              href="https://stackoverflow.com/users/14074978/ylva-nilsson"
+              class="icon-wrapper"
+            >
+              <i class="fa fa-stack-overflow"></i>
+              <span class="sr-only">StackOverflow</span>
+              <p aria-hidden="true">STACKOVERFLOW</p>
+            </a>
+          </div>
         </div>
       </section>
     </main>
+
     <footer>
-      <h5>CONTACT</h5>
+      <h5 tabindex="0">CONTACT</h5>
       <address>
-        <p>Ylva Nilsson</p>
-        <p>+46 70 347 47 99</p>
-        <p>ylva.nilsson75@gmail.com</p>
+        <p tabindex="0">Ylva Nilsson</p>
+        <p
+          tabindex="0"
+          aria-label="Phone number plus four sex seven zero three four seven four seven nine nine"
+        >
+          +46 70 347 47 99
+        </p>
+        <p tabindex="0" aria-label="Ylva dot Nilsson 75 @ gmail dot com">
+          ylva.nilsson75@gmail.com
+        </p>
       </address>
     </footer>
   </body>

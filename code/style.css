@@ -11,6 +11,7 @@ body {
 h1 {
   font-size: 40px;
   line-height: 49px;
+  width: 50%;
 }
 
 h2 {
@@ -44,48 +45,62 @@ p {
   font-family: "Roboto";
 }
 
-header {
-  background-image: url("./assets/top-section/water.jpg");
-  background-size: cover;
-  height: 80vh;
-  color: #fff;
-  position: relative;
+.summary p,
+.tech p {
+  font-family: "Montserrat", sans-serif;
+  line-height: 29px;
 }
 
-/* Added padding to all sections to get good space on left, right, top and bottom */
-.summary,
-.tech,
-.featured-projects,
-.other-projects,
-.my-thoughts,
-.skills,
-.for-more,
-footer {
-  padding: 58px 36px;
-}
-
-/* Change the default styling for a-tag */
-.featured-projects a,
-.other-projects a,
+/* Change the default styling for a-tag's */
+.featured a,
+.other a,
 .my-thoughts a,
 .for-more a {
   color: #000000;
   text-decoration: none;
 }
 
-.header-text {
-  padding: 0px 36px;
+.summary,
+.featured,
+.other,
+.skills {
+  background-color: #f4f4f4;
 }
 
-.icons-wrapper {
+/* HEADER */
+header {
+  background-image: url("./assets/top-section/water.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 508px;
+  color: #fff;
+}
+
+.header-wrapper {
+  position: relative;
+  margin-top: 60px;
+}
+
+.social-icons-top {
   display: flex;
   justify-content: flex-end;
-  padding: 110px 36px 36px 36px;
 }
 
-.icons-wrapper img {
-  width: 15px;
-  height: 15px;
+.fa {
+  font-size: 20px;
+  color: #fff;
+  border: 3px solid #fff;
+  border-radius: 50%;
+  padding: 10px;
+  margin-right: 5px;
+}
+
+.header-content {
+  margin-top: 30px;
+}
+
+.name {
+  font-weight: bold;
 }
 
 .profile-img {
@@ -94,52 +109,85 @@ footer {
   border: 3px solid #fff;
   border-radius: 50%;
   position: absolute;
-  left: 176px;
-  bottom: -20px;
+  right: 0px;
+  bottom: -190px;
 }
 
-.summary {
-  background-color: #f4f4f4;
-}
+/* SUMMARY*/
 
-.red-line {
-  width: 35px;
-  height: 3px;
-  background-color: #fa382f;
-}
-
-.red-dot {
-  width: 10px;
-  height: 10px;
-  background-color: #fa382f;
-  border-radius: 50%;
-}
-
-.summary p,
-.tech p {
-  font-family: "Montserrat", sans-serif;
-  line-height: 29px;
-}
-
-.tech {
+/* common used class name */
+.section-wrapper {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 40px 0px;
 }
 
+/* common used class name */
+.content {
+  max-width: 303px;
+  width: 100%;
+}
+
+/* common used class name */
+.heading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-basis: 100%;
+}
+
+.summary p {
+  text-indent: 50px;
+  position: relative;
+}
+
+.line {
+  background: #fa382f;
+  width: 30px;
+  height: 2px;
+  display: inline-block;
+  position: absolute;
+  top: 13px;
+  left: 0px;
+}
+
+.dot {
+  background: #fa382f;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  display: inline-block;
+  position: absolute;
+  top: 9px;
+  left: 30px;
+}
+
+/* TECH */
 .tech-text {
   text-align: center;
 }
 
-.featured-projects {
+/* FEATURED PROJECTS, OTHER PROJECTS AND MY THOUGHTS*/
+.featured-container,
+.my-thoughts-container {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  background-color: #f4f4f4;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
-.featured-project-wrapper {
+.featured-wrapper img,
+.my-thoughts-wrapper img {
   width: 100%;
+}
+
+.featured-wrapper,
+.my-thoughts-wrapper {
+  margin-top: 20px;
+}
+
+.project-description {
+  margin: 20px 0px;
 }
 
 .project-description span {
@@ -147,31 +195,23 @@ footer {
   color: #fa382f;
 }
 
+.arrow {
+  text-decoration: underline;
+  font-weight: bold;
+  color: #fa382f;
+}
+
 .method-wrapper span {
-  font-size: 9px;
-  line-height: 10px;
+  font-size: 16px;
   font-family: "Roboto";
   color: #2b2e34;
   background-color: #fddfe7;
   padding: 5px 10px;
 }
 
-.other-projects {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  background-color: #f4f4f4;
-}
-
-.other-projects h3 {
+.other h3 {
   color: #fa382f;
   background-color: #f4f4f4;
-}
-
-.my-thoughts {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
 }
 
 .my-thoughts-text span {
@@ -182,32 +222,49 @@ footer {
   color: #fa382f;
 }
 
-.skills {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  background-color: #f4f4f4;
-}
-
+/* SKILLS */
 .skill-name {
   font-weight: bold;
   color: #fa382f;
 }
 
-.for-more {
+/* FOR MORE */
+.social-icons-bottom {
+  display: flex;
+  justify-content: space-around;
+}
+
+.icon-wrapper {
+  color: #fa382f;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.for-more p {
-  font-size: 12px;
+.social-icons-bottom i {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 3px solid #fa382f;
+  color: #fa382f;
+  border-radius: 50%;
+  height: 29px;
+  width: 29px;
+  font-size: 29px;
+  padding: 10px;
+  margin: 0;
+}
+
+.social-icons-bottom p {
+  display: flex;
+  justify-content: center;
+  font-size: 11px;
   line-height: 42px;
   font-weight: 900;
-  font-family: Avenir;
   color: #fa382f;
 }
 
+/* FOOTER */
 footer {
   text-align: center;
   background-color: #072bce;
@@ -216,4 +273,237 @@ footer {
 
 address {
   padding-top: 20px;
+}
+
+/*** MEDIA QUERIES ***/
+@media (min-width: 767px) {
+  .header-wrapper {
+    margin-top: 40px;
+  }
+
+  .fa {
+    font-size: 30px;
+    padding: 15px;
+    margin-right: 10px;
+  }
+
+  .profile-img {
+    width: 220px;
+    height: 220px;
+    bottom: -160px;
+  }
+
+  .section-wrapper {
+    padding: 80px 0px;
+  }
+
+  .content {
+    max-width: 700px;
+  }
+
+  .featured-wrapper,
+  .my-thoughts-wrapper {
+    max-width: 300px;
+  }
+  .social-icons-bottom i {
+    height: 48px;
+    width: 48px;
+    font-size: 38px;
+  }
+
+  .social-icons-bottom p {
+    font-size: 16px;
+    line-height: 62px;
+  }
+}
+
+@media (min-width: 1023px) {
+  h1 {
+    font-size: 60px;
+    line-height: 80px;
+  }
+
+  h2 {
+    font-size: 36px;
+    line-height: 48px;
+  }
+
+  h3 {
+    font-size: 38px;
+    line-height: 50 px;
+    padding: 10px;
+    margin-bottom: 50px;
+  }
+
+  h4 {
+    font-size: 28px;
+    line-height: 36px;
+  }
+
+  h5 {
+    font-size: 26px;
+    line-height: 36px;
+  }
+
+  p {
+    font-size: 22px;
+    line-height: 32px;
+  }
+
+  .summary p,
+  .tech p {
+    font-size: 24px;
+    line-height: 36px;
+  }
+
+  .my-thoughts-text span {
+    font-size: 22px;
+    line-height: 36px;
+  }
+
+  header {
+    height: 655px;
+  }
+
+  .header-wrapper {
+    margin-top: 20px;
+  }
+
+  .fa {
+    font-size: 50px;
+    padding: 20px;
+    margin-right: 10px;
+  }
+
+  .profile-img {
+    width: 332px;
+    height: 332px;
+    bottom: -200px;
+  }
+
+  .section-wrapper {
+    padding: 100px 0px;
+  }
+
+  .content {
+    max-width: 900px;
+  }
+
+  .summary p {
+    text-indent: 60px;
+    position: relative;
+  }
+
+  .line {
+    width: 40px;
+    height: 4px;
+    top: 14px;
+  }
+
+  .dot {
+    width: 15px;
+    height: 15px;
+    left: 40px;
+  }
+
+  .featured-wrapper,
+  .my-thoughts-wrapper {
+    max-width: 400px;
+  }
+
+  .social-icons-bottom i {
+    height: 68px;
+    width: 68px;
+    font-size: 48px;
+  }
+
+  .social-icons-bottom p {
+    font-size: 18px;
+    line-height: 72px;
+  }
+}
+
+@media (min-width: 1439px) {
+  h1 {
+    font-size: 82px;
+    line-height: 100px;
+  }
+
+  h2 {
+    font-size: 50px;
+    line-height: 62px;
+  }
+
+  h3 {
+    font-size: 48px;
+    line-height: 58px;
+    padding: 14px;
+    margin-bottom: 70px;
+  }
+
+  h4 {
+    font-size: 30px;
+    line-height: 42px;
+  }
+
+  h5 {
+    font-size: 38px;
+    line-height: 48px;
+  }
+
+  p {
+    font-size: 25px;
+    line-height: 41px;
+  }
+
+  .summary p,
+  .tech p {
+    font-size: 30px;
+    line-height: 50px;
+  }
+
+  .my-thoughts-text span {
+    font-size: 25px;
+    line-height: 42px;
+  }
+
+  .header-wrapper {
+    margin-top: 0px;
+  }
+
+  .profile-img {
+    bottom: -140px;
+  }
+
+  .section-wrapper {
+    padding: 120px 0px;
+  }
+
+  .content {
+    max-width: 1100px;
+  }
+
+  .line {
+    top: 21px;
+  }
+
+  .dot {
+    top: 16px;
+  }
+
+  .featured-wrapper,
+  .my-thoughts-wrapper {
+    max-width: 500px;
+  }
+
+  .social-icons-bottom i {
+    height: 108px;
+    width: 108px;
+    font-size: 58px;
+  }
+
+  .social-icons-bottom p {
+    font-size: 25px;
+    line-height: 82px;
+  }
 }
