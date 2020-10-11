@@ -58,6 +58,7 @@ This is what I have used for testing and tried to fix things that have been high
 **Header**
 
 * Add opacity to the background image to get better contrast to the text
+* Use different profile images with better matching aspect ratio for the media queries
 
 **Summary**
 
