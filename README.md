@@ -35,6 +35,20 @@ This is what I have used for testing and tried to fix things that have been high
 
 ### TO-DO list
 
+**Lighthouse**
+
+* Tag `<h5>` in footer - Heading elements are not in a sequentially-descending order
+ 
+**validator.w3.org**
+
+* Section & Article lacks heading - Replace? Ask code coaches if I should replace tem with tag `<div>`
+* Possible misues of `aria-lable` - Replace? Ask code coaches bout it
+
+**https://wave.webaim.org/**
+
+* 4 X Very low contrast in header - fix to add opacity
+* 4 X Suspicious alternative text in featured projects and my thoughts
+
 **General**
 
 * Use `text-transform: uppercase;` instead of writing my text in capital letters in HTML
